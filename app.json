@@ -1,7 +1,8 @@
 {
   "expo": {
-    "name": "rrsc-scaffold",
-    "slug": "rrsc-scaffold",
+    "name": "RRSC Scanner",
+    "slug": "rrsc-scanner",
+    "scheme": "rrsc-scanner",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -12,7 +13,8 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.rrsc-scanner"
     },
     "android": {
       "adaptiveIcon": {
@@ -25,6 +27,10 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-router"
+    ]
   }
 }
